@@ -12,8 +12,7 @@ const port = process.env.PORT || 3000
 const app = express()
 
 app.listen(port, () => {
-    console.log(chalk.bgCyan(`
-    Servidor local criado com sucesso em: http://localhost:${port}`))
+    'Servidor local criado com sucesso'
 })
 
 const routes = (app) => {
@@ -35,6 +34,5 @@ routes(app)
 
 db.on("error", console.log.bind(console, 'Erro de conexão'))
 db.once("open", () => {
-    console.log(chalk.bgCyan(`    MongoDB Atlas conectado com sucesso
-`))
-})
+    console.log(`    MongoDB Atlas conectado com sucesso
+`)})
