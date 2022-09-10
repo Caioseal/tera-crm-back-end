@@ -1,6 +1,5 @@
 import express from "express"
 import db from "./src/Config/dbConnect.js"
-import chalk from 'chalk'
 import cardsRoutes from "./src/Routes/cardsRoutes.js"
 import cors from "cors"
 import userRoutes from "./src/Routes/userRoutes.js"
